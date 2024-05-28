@@ -129,7 +129,7 @@ h1{
     margin: 5px;
 }
 .wdetail .cityname{
-    font-size: 2rem;
+    font-size: 2em;
 }
 .wdetail span{
     font-family: "Bakbak One", sans-serif;
@@ -225,6 +225,7 @@ h1{
     height: 190px;
     margin:10px;
     min-width: 200px;
+    overflow: hidden;
     background: rgba(228, 226, 226,0.6);
     transition: 0.10s ease-out;
 }

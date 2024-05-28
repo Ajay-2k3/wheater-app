@@ -89,9 +89,18 @@ const getCityCoordinates = () => {
     const GEOCODING_API_URL = urlapi+cityName+API_key;
 
     fetch(GEOCODING_API_URL).then(response => response.json()).then(data => {
-        if(!data.length) return alert("Invalid input! enter correctly !");
+        if(!data.length){
+            weatherlist.classList.remove('active-list');
+            current_weather.classList.remove('active-cw');
+            searchinput.classList.remove('active-SI');
+            return alert("Invalid input! enter correctly !");
+        } 
         const { name, lat, lon } = data[0]; 
         getWeatherDetails(name, lat, lon );
+        weatherlist.classList.add('active-list');
+        current_weather.classList.add('active-cw');
+        searchinput.classList.add('active-SI');
+
      }).catch(() => {
         alert(" An error occured while fetching the coordinates!");
      });
@@ -107,8 +116,12 @@ const getUserCoordinates = () => {
             fetch(API_URL).then(response => response.json()).then(data => {
                 const { name } = data[0];
                 getWeatherDetails(name, latitude, longitude);
+                weatherlist.classList.add('active-list');
+                current_weather.classList.add('active-cw');
+                searchinput.classList.add('active-SI');
             }).catch(() => {
                 alert("An error occurred while fetching the city name!");
+                
             });
         },
         error => { // Show alert if user denied the location permission
@@ -120,7 +133,7 @@ const getUserCoordinates = () => {
         });
 }
 
-search.addEventListener('click', ()=>{
+/*search.addEventListener('click', ()=>{
     if(cityInput.value !== ""){
         weatherlist.classList.add('active-list');
         current_weather.classList.add('active-cw');
@@ -131,7 +144,7 @@ search.addEventListener('click', ()=>{
         current_weather.classList.remove('active-cw');
         searchinput.classList.remove('active-SI');
     }
-});
+});*/
 locationButton.addEventListener('click', ()=>{
     if(cityInput.value !== ""){
         weatherlist.classList.add('active-list');
