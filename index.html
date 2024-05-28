@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>weather dashboard</title>
+</head>
+<body>
+    <header>
+        <div>
+        <h1>Weather Dashboard</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="searchinput">
+         <label >Enter A City Name</label>
+         <input type="text" name="searchbox" id="searchvalue" class="city-input" placeholder="E.g.,Vellore,chennai"> 
+        <button class="location">Use Current Location</button> 
+        <div>
+            <button class="search">Search</button>
+            <button type="reset" class="clearbtn" onclick="document.getElementById('searchvalue').value =''">Clear</button>
+         </div>  
+
+        </div>
+        <div class="current-weather" id="currenWeather">
+            <div class="wdetail">
+                <span class="cityname"> Chennai</span>    
+                <span class="date">April Monday 1</span>
+            </div>
+            <div class="w-logo">
+                <span class="celus"> 80<p>&deg;C</p>
+                </span>
+                <img src="./animated/cloudy-day-2.svg" alt="">
+            </div>
+            <div class="hw">
+                <div>
+                    <img class="idl" src="/image/storm.png" alt="wind">
+                    <span class="wind">123 M/S</span>
+                </div>
+                <div>
+                    <img class="idl" src="/image/humidity.png" alt="humidity">
+                    <span class="humidity">80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="weatherlist">
+            <div class="wlist-title">
+                <h2 class="uw-heading">Upcoming Days</h2>
+            </div>
+            <div class="upcomming-weathers">
+                <div>                
+                    <div class="weather nday1">
+                    <div class="wdetail">
+                        <span class="cityname">place</span>    
+                        <span class="date">date and day</span>
+                    </div>
+                    <div class="w-logo">
+                        <span class="celus"> 00<p>&deg;C</p>
+                        </span>
+                        <img src="./animated/cloudy-day-2.svg" alt="">
+                    </div>
+                    <div class="hw">
+                        <div>
+                            <img class="idl" src="/image/storm.png" alt="wind">
+                            <span class="wind">00 M/S</span>
+                        </div>
+                        <div>
+                            <img class="idl" src="/image/humidity.png" alt="humidity">
+                            <span class="humidity">00%</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="weather nday2">
+                    <div class="wdetail">
+                        <span class="cityname"> Chennai</span>    
+                        <span class="date">April Monday 1</span>
+                    </div>
+                    <div class="w-logo">
+                        <span class="celus"> 80<p>&deg;C</p>
+                        </span>
+                        <img src="./animated/cloudy-day-2.svg" alt="">
+                    </div>
+                    <div class="hw">
+                        <div>
+                            <img class="idl" src="/image/storm.png" alt="wind">
+                            <span class="wind">123 M/S</span>
+                        </div>
+                        <div>
+                            <img class="idl" src="/image/humidity.png" alt="humidity">
+                            <span class="humidity">80%</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="weather nday3">
+                    <div class="wdetail">
+                        <span class="cityname"> Chennai</span>    
+                        <span class="date">April Monday 1</span>
+                    </div>
+                    <div class="w-logo">
+                        <span class="celus"> 80<p>&deg;C</p>
+                        </span>
+                        <img src="./animated/cloudy-day-2.svg" alt="">
+                    </div>
+                    <div class="hw">
+                        <div>
+                            <img class="idl" src="/image/storm.png" alt="wind">
+                            <span class="wind">123 M/S</span>
+                        </div>
+                        <div>
+                            <img class="idl" src="/image/humidity.png" alt="humidity">
+                            <span class="humidity">80%</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="weather nday4">
+                    <div class="wdetail">
+                        <span class="cityname"> Chennai</span>    
+                        <span class="date">April Monday 1</span>
+                    </div>
+                    <div class="w-logo">
+                        <span class="celus"> 80<p>&deg;C</p>
+                        </span>
+                        <img src="./animated/cloudy-day-2.svg" alt="">
+                    </div>
+                    <div class="hw">
+                        <div>
+                            <img class="idl" src="/image/storm.png" alt="wind">
+                            <span class="wind">123 M/S</span>
+                        </div>
+                        <div>
+                            <img class="idl" src="/image/humidity.png" alt="humidity">
+                            <span class="humidity">80%</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="weather nday5">
+                    <div class="wdetail">
+                        <span class="cityname"> Chennai</span>    
+                        <span class="date">April Monday 1</span>
+                    </div>
+                    <div class="w-logo">
+                        <span class="celus"> 80<p>&deg;C</p>
+                        </span>
+                        <img src="./animated/cloudy-day-2.svg" alt="">
+                    </div>
+                    <div class="hw">
+                        <div>
+                            <img class="idl" src="/image/storm.png" alt="wind">
+                            <span class="wind">123 M/S</span>
+                        </div>
+                        <div>
+                            <img class="idl" src="/image/humidity.png" alt="humidity">
+                            <span class="humidity">80%</span>
+                        </div>
+                        </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

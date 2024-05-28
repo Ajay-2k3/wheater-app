@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Block&display=swap');
+body{
+    height: 140svh;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Noto Sans", sans-serif;
+    background:url(./image/top-visual.jpg);
+    background-size: cover;
+    background-position: center;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header div{ 
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: aliceblue;
+    border-radius: 0 0 20px 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    font-size: clamp( 1rem, 0.3043rem + 3.4783vW , 3rem);
+    padding: 20px;
+}
+
+.upcomming-weathers::-webkit-scrollbar{
+    display: none;
+  }
+
+
+.container{
+    height: 120svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    
+}
+
+.container>div{
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+}
+
+.searchinput{
+    width: 350px;
+    height: 160px;
+    padding: 20px;
+    margin-top: 150px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease-in;
+
+}
+.active-SI{
+    width: 250px;
+    height: 160px;
+    padding: 20px;
+    margin-top: 40px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.searchinput > label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.searchinput > input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 3em;
+    border-radius: 5px;
+}
+.searchinput>button{
+    width: 100%;
+}
+.searchinput > div{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.searchinput  button{
+    padding: 5px;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-weight:bold;
+    background: rgba(237, 237, 237, 0.516);
+
+}
+.searchinput button:hover{
+    transform: translateY(-3px);
+    background-color:  white;
+    cursor: pointer;
+}
+.current-weather{
+    border: 2px solid rgb(228, 226, 226);
+    border-radius: 20px;
+    height: 180px;
+    margin: 10px;
+    min-width: 200px;
+    background: rgba(228, 226, 226,0.6);
+    overflow: hidden;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.7s ease-in-out 0s;
+}
+.wdetail{
+    display: inline-flex;
+    gap: 5px;
+    flex-direction: column;
+    margin: 5px;
+}
+.wdetail .cityname{
+    font-size: 2rem;
+}
+.wdetail span{
+    font-family: "Bakbak One", sans-serif;
+    color:black;     
+}
+.hw{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.wind , .humidity{
+    position: relative;
+    bottom: 8px;
+}
+.idl{
+    width: 2em;
+}
+.w-logo{
+    width: 200px;
+    display: flex;
+
+    align-items: center;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 22px;
+}
+.w-logo img{
+    width: 8em;
+    margin: 0;
+    flex-wrap: wrap;
+    position: relative;
+}
+.celus{
+    text-align: center;
+    font-size: 3.5rem;
+    display: flex;
+
+}
+.celus p{
+    font-size: 1rem;
+    position: relative;
+    top:-5px;
+}
+.active-cw{
+    width: 200px;
+    height: 200px;
+    visibility: visible;
+    transform: scale(1);
+}
+.upcomming-weathers{
+    padding-bottom: 40px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+.uw-heading{
+    margin: 0;
+    text-align: center;
+}
+.weatherlist{
+    width: 0;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.6s ease-in-out;
+}
+.active-list{
+    width: 100%;
+    height: 270px;
+    visibility: visible;
+    transform: scaleX(1);
+}
+.weatherlist>div{
+    margin-top: 10px;
+
+}
+
+
+.upcomming-weathers>div{
+    border: 3px solid rgb(228, 226, 226);
+    border-radius: 20px;
+    width: 210px;
+    height: 190px;
+    margin:10px;
+    min-width: 200px;
+    background: rgba(228, 226, 226,0.6);
+    transition: 0.10s ease-out;
+}
+ 
+@media (max-width:1164px) {
+    .upcomming-weathers{
+        overflow:scroll;
+        overflow-y: hidden; 
+      
+    }
+
+}
