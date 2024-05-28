@@ -33,19 +33,19 @@ const createWeatherCard = (cityName, weatherItem, index) => {
 const weatherImage = (WImage, index) =>{
     switch(WImage){
         case "Clear":
-            wImage[index].src = "/animated/day.svg";
+            wImage[index].src = "/Animated/day.svg";
             break;
         case "Rain":
-            wImage[index].src = "/animated/rainy-7.svg";
+            wImage[index].src = "/Animated/rainy-7.svg";
             break;
         case "Clouds":
-            wImage[index].src = "/animated/cloudy-day-2.svg";
+            wImage[index].src = "/Animated/cloudy-day-2.svg";
             break;
         case "Snow":
-            wImage[index].src = "/animated/snowy-6.svg";
+            wImage[index].src = "/Animated/snowy-6.svg";
             break;
         case "Mist":
-            wImage[index].src = "/animated/forecast-cloud-fog-foggy-weather-svgrepo-com.svg"
+            wImage[index].src = "/Animated/forecast-cloud-fog-foggy-weather-svgrepo-com.svg"
             break;
         }
 }
